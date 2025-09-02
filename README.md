@@ -1,62 +1,97 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/2tEDYwzN)
-# Team Project
+# 🚀 Phreddit
 
-Add design docs in *images/*
+Phreddit is a Reddit-style social platform built as part of coursework for **CSE316 (Operating Systems)** at Stony Brook University.  
+It supports posts, nested comments, voting, user authentication, and basic moderation features, showcasing a full-stack implementation of a community-driven web application.
 
-----
-
-Phreddit Setup Instructions
-
-This guide walks you through setting up and running the full Phreddit app (MongoDB backend + React frontend).
-
-Prerequisites
-
-Make sure the following are installed:
-
-- Node.js and npm  
-  node -v  
-  npm -v
-
-- MongoDB running locally on the default port  
-  mongod
-
-
-Steps to Run the Application
-
-1. Clone the Repository
-
-2. Setup the Backend
-   cd server  
-   npm install
-
-3. Initialize the Database  
-   Run this script to seed the DB and create the initial admin account:
-   node init.js mongodb://127.0.0.1:27017/phreddit admin@example.com adminUser SecureAdminPassword123
-
-4. Start the Backend Server  
-   node server.js
-
-   You should see:
-   Connected to MongoDB  
-   Server listening on port 8000...
-
-5. Setup the Frontend  
-   Open a new terminal tab/window and run:  
-   cd client  
-   npm install  
-   npm start
-
-   The frontend will launch in your browser at:
-   http://localhost:3000
+**🎥 Demo Video → Coming soon 🚀**
 
 ---
 
-You're Done! You can now browse Phreddit.
+## ✨ Features
+📝 **Posts & Comments** — Create posts, reply with nested comments, and engage in threaded discussions  
+👍 **Voting System** — Upvote and downvote posts/comments with dynamic score ranking  
+👤 **User Authentication** — Register, log in, and manage user sessions  
+🛡️ **Moderation Tools** — Lock posts, remove content, and manage community activity  
+📱 **Responsive UI** — Clean and functional interface accessible across devices  
 
-In the sections below, list and describe each contribution briefly.
+---
 
-## Team Member 1 Contribution
-<Team Member 1 Name>
+## 🧱 Tech Stack
+- **Frontend:** React (with JSX/JS), Babel, Jest (for testing)  
+- **Backend:** Node.js, Express.js  
+- **Database:** MongoDB (Mongoose models)  
+- **Styling:** Basic CSS + responsive layouts  
+- **Tooling:** ESLint, Babel  
 
-## Team Member 2 Contribution
-<Team Member 2 Name>
+---
+
+## 📂 Project Structure
+```
+/
+├── client/              # React frontend
+│   ├── public/          # Static assets
+│   ├── src/             # React components & views
+│   ├── package.json     # Frontend dependencies
+│
+├── server/              # Node/Express backend
+│   ├── models/          # Mongoose schemas
+│   ├── routes/          # API routes
+│   ├── server.js        # Express entry point
+│   ├── package.json     # Backend dependencies
+│
+├── images/              # UML diagrams & coursework design artifacts
+│
+└── README.md            # Project overview
+```
+
+---
+
+## ⚙️ Getting Started
+
+### 1. Clone the repo
+```bash
+git clone https://github.com/anshsaluja/phreddit.git
+cd phreddit
+```
+
+### 2. Install dependencies
+Frontend:
+```bash
+cd client
+npm install
+npm start
+```
+
+Backend:
+```bash
+cd ../server
+npm install
+npm start
+```
+
+### 3. Environment Setup
+Create a `.env` file in `/server` with your MongoDB URI and any session secrets:
+```
+MONGO_URI=your-mongodb-uri
+SESSION_SECRET=your-secret-key
+```
+
+---
+
+## 📦 Deployment
+- Designed for local development and coursework demo purposes  
+- Can be deployed on Heroku/Render with separate frontend & backend builds  
+- Not optimized for production use  
+
+---
+
+## 📄 License
+This project is covered by a **custom coursework license**.  
+See the [LICENSE](LICENSE) file for details.  
+⚠️ **Note:** This project is not open source. Unauthorized use, copying, or distribution is prohibited.  
+
+---
+
+## 👤 Author
+Built with ❤️ by **Ansh Saluja**  
+_Coursework Project — Stony Brook University, 2025_
