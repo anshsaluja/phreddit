@@ -3,7 +3,7 @@
 Phreddit is a Reddit-style social platform built as part of coursework for **CSE316 (Web Development)** at Stony Brook University.  
 It supports posts, nested comments, voting, user authentication, and basic moderation features, showcasing a full-stack implementation of a community-driven web application.
 
-**🎥 Demo Video → Coming soon 🚀**
+**🎥 Demo Video → https://drive.google.com/file/d/1y_vb7bEblOqsJK72NQ14OA3pSQKs4N8V/view?usp=drive_link**
 
 ---
 
